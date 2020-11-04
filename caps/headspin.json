@@ -1,0 +1,45 @@
+{
+  "android": {
+    "automationName": "UIAutomator2",
+    "appPackage": "com.android.settings",
+    "platformName": "android",
+    "appActivity": "com.android.settings.Settings",
+    "app": {
+      "local": "https://github.com/shridharkalagi/AppiumSample/raw/master/VodQA.apk"
+    },
+    "noSign": true
+  },
+  "iOS": {
+    "platformName": "iOS",
+    "app": {
+      "simulator": "https://github.com/saikrishna321/AppiumTestDistribution/blob/master/apps/VodQAReactNative.zip?raw=true"
+    },
+    "bundleId": "com.apple.Preferences",
+    "deviceName": "iPhone",
+    "wdaLaunchTimeout": 80000,
+    "wdaConnectionTimeout": 80000,
+    "preventWDAAttachments": true,
+    "clearSystemFiles": true,
+    "shouldUseSingletonTestManager": false,
+    "simpleIsVisibleCheck": true,
+    "maxTypingFrequency": 10
+  },
+  "cloud": {
+    "android": [
+      {
+        "deviceName": "Google Pixel 3 XL",
+        "osVersion": "9.0"
+      },
+      {
+        "deviceName": "Samsung Galaxy S9 Plus",
+        "osVersion": "9.0"
+      }
+    ]
+  },
+  "hostMachines": [
+    {
+      "isCloud": true,
+      "machineIP": "proxy.headspin.io:8888",
+    }
+  ]
+}

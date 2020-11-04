@@ -15,8 +15,15 @@ public class CloudAppiumManager implements IAppiumManager {
 
     @Override
     public String getRemoteWDHubIP(String host) {
-        String url = "https://{0}:{1}@{2}/wd/hub";
-        return format(url, getenv("CLOUD_USER"), getenv("CLOUD_KEY"), host);
+        if(getenv("IS_HEADSPIN_CLOUD") == null || getenv("IS_HEADSPIN_CLOUD") == "false")
+        {
+            String url = "https://{0}:{1}@{2}/wd/hub";
+            return format(url, getenv("CLOUD_USER"), getenv("CLOUD_KEY"), host);
+        }
+        else {
+            String url = "https://{0}/v0/{1}/wd/hub";
+            return format(url, getenv("CLOUD_KEY"), host);
+        }
     }
 
     @Override
