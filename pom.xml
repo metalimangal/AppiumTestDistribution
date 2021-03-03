@@ -4,11 +4,11 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>com.github.metalimangal</groupId>
     <artifactId>AppiumTestDistribution</artifactId>
-    <version>fix-756-headspin-SNAPSHOT</version>
+    <version>11.0.1</version>
     <packaging>jar</packaging>
     <name>AppiumTestDistribution</name>
     <description>A tool run Android and iOS test in parallel across devices</description>
-    <url>https://github.com/saikrishna321/AppiumTestDistribution</url>
+    <url>https://github.com/metalimangal/AppiumTestDistribution</url>
 
     <licenses>
         <license>
@@ -18,8 +18,8 @@
     </licenses>
 
     <scm>
-        <url>https://github.com/saikrishna321/AppiumTestDistribution.git</url>
-        <connection>scm:git:git@github.com:saikrishna321/AppiumTestDistribution.git</connection>
+        <url>https://github.com/metalimangal/AppiumTestDistribution.git</url>
+        <connection>scm:git:git@github.com:metalimangal/AppiumTestDistribution.git</connection>
     </scm>
 
     <developers>
